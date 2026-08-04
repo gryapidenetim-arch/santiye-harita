@@ -8,19 +8,46 @@
 <style>
   html, body { height: 100%; margin: 0; font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
   #harita { height: 100%; width: 100%; }
+
   #ustBar {
     position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
     background: #1f2937; color: #fff; padding: 10px 16px;
-    display: flex; justify-content: space-between; align-items: center;
-    font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   }
+  #ustBarUst { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
   #ustBar b { font-size: 15px; }
   #guncellemeZamani { opacity: 0.75; font-size: 12px; }
+
+  #aramaKutusu {
+    width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px;
+    border: none; font-size: 15px; outline: none;
+  }
+
+  #sonuclar {
+    position: absolute; top: 92px; left: 0; right: 0; z-index: 999;
+    background: #fff; max-height: 60vh; overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: none;
+  }
+  #sonuclar.acik { display: block; }
+  .sonuc-satir {
+    padding: 10px 14px; border-bottom: 1px solid #eee; cursor: pointer;
+  }
+  .sonuc-satir:active, .sonuc-satir:hover { background: #f3f4f6; }
+  .sonuc-satir .ad { font-weight: 600; font-size: 14px; color: #111; }
+  .sonuc-satir .detay { font-size: 12.5px; color: #666; margin-top: 2px; }
+  .sonuc-yok { padding: 14px; color: #888; font-size: 14px; text-align: center; }
+
   .site-popup b { font-size: 14px; }
   .site-popup .adres { color: #555; font-size: 12.5px; }
+  .yol-tarifi-btn {
+    display: inline-block; margin-top: 8px; padding: 7px 14px;
+    background: #1f2937; color: #fff !important; border-radius: 6px;
+    text-decoration: none; font-size: 13px; font-weight: 600;
+  }
+
   #yukleniyor {
     position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    z-index: 999; background: white; padding: 12px 20px; border-radius: 8px;
+    z-index: 998; background: white; padding: 12px 20px; border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15); font-size: 14px; color: #333;
   }
 </style>
@@ -28,40 +55,109 @@
 <body>
 
 <div id="ustBar">
-  <b>📍 Şantiye Konumları</b>
-  <span id="guncellemeZamani">Yükleniyor...</span>
+  <div id="ustBarUst">
+    <b>📍 Şantiye Konumları</b>
+    <span id="guncellemeZamani">Yükleniyor...</span>
+  </div>
+  <input id="aramaKutusu" type="text" placeholder="İş adı, ada veya parsel ile ara..." autocomplete="off">
 </div>
+<div id="sonuclar"></div>
 <div id="yukleniyor">Şantiye verileri yükleniyor...</div>
 <div id="harita"></div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script>
-  const harita = L.map('harita').setView([39.0, 35.0], 6); // Türkiye genel görünüm
+  // Samsun merkezli başlangıç görünümü (siz Samsun dışında iş almadığınız için)
+  const SAMSUN_MERKEZ = [41.29, 36.33];
+  const harita = L.map('harita').setView(SAMSUN_MERKEZ, 10);
 
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; OpenStreetMap katkıda bulunanlar'
   }).addTo(harita);
 
+  let TUM_SANTIYELER = [];
+  const markerHaritasi = {}; // id -> Leaflet marker
+
+  function yolTarifiLinki(lat, lng) {
+    return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
+  }
+
+  function popupIcerigi(s) {
+    const adaParsel = (s.ada || s.parsel) ? `Ada ${s.ada || '-'} / Parsel ${s.parsel || '-'}` : '';
+    return `<div class="site-popup">
+        <b>${s.ad || 'İsimsiz Şantiye'}</b><br>
+        <span class="adres">${s.adres || ''}</span>
+        ${adaParsel ? `<br><span class="adres">${adaParsel}</span>` : ''}
+        ${s.durum ? `<br><span class="adres">Durum: ${s.durum}</span>` : ''}
+        <br><a class="yol-tarifi-btn" href="${yolTarifiLinki(s.lat, s.lng)}" target="_blank" rel="noopener">📍 Yol Tarifi Al</a>
+      </div>`;
+  }
+
+  function markerAOdaklan(s) {
+    harita.setView([s.lat, s.lng], 16);
+    const marker = markerHaritasi[s.id];
+    if (marker) marker.openPopup();
+    document.getElementById('sonuclar').classList.remove('acik');
+    document.getElementById('aramaKutusu').blur();
+  }
+
+  function aramaSonuclariniGoster(sorgu) {
+    const kutu = document.getElementById('sonuclar');
+    sorgu = sorgu.trim().toLocaleLowerCase('tr');
+
+    if (!sorgu) {
+      kutu.classList.remove('acik');
+      kutu.innerHTML = '';
+      return;
+    }
+
+    const eslesenler = TUM_SANTIYELER.filter(s => {
+      const hedef = [
+        s.ad || '', s.adres || '',
+        s.ada != null ? String(s.ada) : '',
+        s.parsel != null ? String(s.parsel) : ''
+      ].join(' ').toLocaleLowerCase('tr');
+      return hedef.includes(sorgu);
+    }).slice(0, 30);
+
+    if (eslesenler.length === 0) {
+      kutu.innerHTML = '<div class="sonuc-yok">Eşleşen şantiye bulunamadı</div>';
+    } else {
+      kutu.innerHTML = eslesenler.map(s => {
+        const adaParsel = (s.ada || s.parsel) ? `Ada ${s.ada || '-'} / Parsel ${s.parsel || '-'} • ` : '';
+        return `<div class="sonuc-satir" data-id="${s.id}">
+                   <div class="ad">${s.ad || 'İsimsiz Şantiye'}</div>
+                   <div class="detay">${adaParsel}${s.adres || ''}</div>
+                 </div>`;
+      }).join('');
+    }
+    kutu.classList.add('acik');
+  }
+
+  document.getElementById('aramaKutusu').addEventListener('input', e => {
+    aramaSonuclariniGoster(e.target.value);
+  });
+
+  document.getElementById('sonuclar').addEventListener('click', e => {
+    const satir = e.target.closest('.sonuc-satir');
+    if (!satir) return;
+    const s = TUM_SANTIYELER.find(x => String(x.id) === satir.dataset.id);
+    if (s) markerAOdaklan(s);
+  });
+
   fetch('data.json?_=' + Date.now()) // cache'i kırmak için
     .then(r => r.json())
     .then(veri => {
       document.getElementById('yukleniyor').style.display = 'none';
 
-      const noktalar = veri.santiyeler || [];
+      TUM_SANTIYELER = (veri.santiyeler || []).filter(s => typeof s.lat === 'number' && typeof s.lng === 'number');
       const sinirlar = [];
 
-      noktalar.forEach(s => {
-        if (typeof s.lat !== 'number' || typeof s.lng !== 'number') return;
-
+      TUM_SANTIYELER.forEach(s => {
         const marker = L.marker([s.lat, s.lng]).addTo(harita);
-        marker.bindPopup(
-          `<div class="site-popup">
-             <b>${s.ad || 'İsimsiz Şantiye'}</b><br>
-             <span class="adres">${s.adres || ''}</span>
-             ${s.durum ? `<br><span class="adres">Durum: ${s.durum}</span>` : ''}
-           </div>`
-        );
+        marker.bindPopup(popupIcerigi(s));
+        markerHaritasi[s.id] = marker;
         sinirlar.push([s.lat, s.lng]);
       });
 
@@ -71,9 +167,9 @@
 
       const guncellemeEl = document.getElementById('guncellemeZamani');
       if (veri.guncelleme_tarihi) {
-        guncellemeEl.textContent = 'Son güncelleme: ' + veri.guncelleme_tarihi + ' • ' + noktalar.length + ' şantiye';
+        guncellemeEl.textContent = 'Son güncelleme: ' + veri.guncelleme_tarihi + ' • ' + TUM_SANTIYELER.length + ' şantiye';
       } else {
-        guncellemeEl.textContent = noktalar.length + ' şantiye';
+        guncellemeEl.textContent = TUM_SANTIYELER.length + ' şantiye';
       }
     })
     .catch(err => {
