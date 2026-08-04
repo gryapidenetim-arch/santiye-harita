@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Şantiye Konumları</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<style>
+  html, body { height: 100%; margin: 0; font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+  #harita { height: 100%; width: 100%; }
+  #ustBar {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
+    background: #1f2937; color: #fff; padding: 10px 16px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 14px; box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  #ustBar b { font-size: 15px; }
+  #guncellemeZamani { opacity: 0.75; font-size: 12px; }
+  .site-popup b { font-size: 14px; }
+  .site-popup .adres { color: #555; font-size: 12.5px; }
+  #yukleniyor {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    z-index: 999; background: white; padding: 12px 20px; border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15); font-size: 14px; color: #333;
+  }
+</style>
+</head>
+<body>
+
+<div id="ustBar">
+  <b>📍 Şantiye Konumları</b>
+  <span id="guncellemeZamani">Yükleniyor...</span>
+</div>
+<div id="yukleniyor">Şantiye verileri yükleniyor...</div>
+<div id="harita"></div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+  const harita = L.map('harita').setView([39.0, 35.0], 6); // Türkiye genel görünüm
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap katkıda bulunanlar'
+  }).addTo(harita);
+
+  fetch('data.json?_=' + Date.now()) // cache'i kırmak için
+    .then(r => r.json())
+    .then(veri => {
+      document.getElementById('yukleniyor').style.display = 'none';
+
+      const noktalar = veri.santiyeler || [];
+      const sinirlar = [];
+
+      noktalar.forEach(s => {
+        if (typeof s.lat !== 'number' || typeof s.lng !== 'number') return;
+
+        const marker = L.marker([s.lat, s.lng]).addTo(harita);
+        marker.bindPopup(
+          `<div class="site-popup">
+             <b>${s.ad || 'İsimsiz Şantiye'}</b><br>
+             <span class="adres">${s.adres || ''}</span>
+             ${s.durum ? `<br><span class="adres">Durum: ${s.durum}</span>` : ''}
+           </div>`
+        );
+        sinirlar.push([s.lat, s.lng]);
+      });
+
+      if (sinirlar.length > 0) {
+        harita.fitBounds(sinirlar, { padding: [40, 60] });
+      }
+
+      const guncellemeEl = document.getElementById('guncellemeZamani');
+      if (veri.guncelleme_tarihi) {
+        guncellemeEl.textContent = 'Son güncelleme: ' + veri.guncelleme_tarihi + ' • ' + noktalar.length + ' şantiye';
+      } else {
+        guncellemeEl.textContent = noktalar.length + ' şantiye';
+      }
+    })
+    .catch(err => {
+      document.getElementById('yukleniyor').textContent = 'Veri yüklenemedi: ' + err;
+    });
+</script>
+
+</body>
+</html>
