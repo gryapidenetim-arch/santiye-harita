@@ -1,16 +1,6 @@
 {
-  "guncelleme_tarihi": "04.08.2026 16:39",
+  "guncelleme_tarihi": "04.08.2026 16:42",
   "santiyeler": [
-    {
-      "id": 2522169,
-      "ad": "MENŞURE AKYÜZ\n",
-      "durum": "Ruhsat Başvuru Bekleyen",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5288,
-      "parsel": 3,
-      "lat": 41.355750808838,
-      "lng": 36.211902778944406
-    },
     {
       "id": 2589186,
       "ad": "HÜSEYİN ÇİNAR",
@@ -30,6 +20,26 @@
       "parsel": 1,
       "lat": 41.118726431256,
       "lng": 35.490953794071665
+    },
+    {
+      "id": 2006823,
+      "ad": "ABDURRAHMAN ACAT A BLOK",
+      "durum": "Fesihli Tespitli",
+      "adres": "KILIÇDEDE, İLKADIM, SAMSUN",
+      "ada": 893,
+      "parsel": 32,
+      "lat": 41.27255,
+      "lng": 36.341249999999995
+    },
+    {
+      "id": 2495448,
+      "ad": "MUHAMMET EROĞLU",
+      "durum": "Güncel",
+      "adres": "BAHÇELİEVLER, 19 MAYIS, SAMSUN",
+      "ada": 368,
+      "parsel": 10,
+      "lat": 41.49872646821856,
+      "lng": 36.06938521366922
     },
     {
       "id": 2607491,
@@ -52,28 +62,18 @@
       "lng": 35.66027564944156
     },
     {
-      "id": 2495448,
-      "ad": "MUHAMMET EROĞLU",
-      "durum": "Güncel",
-      "adres": "BAHÇELİEVLER, 19 MAYIS, SAMSUN",
-      "ada": 368,
-      "parsel": 10,
-      "lat": 41.49872646821856,
-      "lng": 36.06938521366922
+      "id": 2522169,
+      "ad": "MENŞURE AKYÜZ\n",
+      "durum": "Ruhsat Başvuru Bekleyen",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5288,
+      "parsel": 3,
+      "lat": 41.355750808838,
+      "lng": 36.211902778944406
     },
     {
       "id": 2006866,
       "ad": "ABDURRAHMAN ACAT B BLOK",
-      "durum": "Fesihli Tespitli",
-      "adres": "KILIÇDEDE, İLKADIM, SAMSUN",
-      "ada": 893,
-      "parsel": 32,
-      "lat": 41.27255,
-      "lng": 36.341249999999995
-    },
-    {
-      "id": 2006823,
-      "ad": "ABDURRAHMAN ACAT A BLOK",
       "durum": "Fesihli Tespitli",
       "adres": "KILIÇDEDE, İLKADIM, SAMSUN",
       "ada": 893,
@@ -102,34 +102,14 @@
       "lng": 36.2803658959768
     },
     {
-      "id": 2062734,
-      "ad": "SUDEGÜL ÇOLAK B BLOK",
+      "id": 2432132,
+      "ad": "ŞENDA EMİRZA ",
       "durum": "Güncel",
-      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
-      "ada": 11395,
-      "parsel": 6,
-      "lat": 41.305675,
-      "lng": 36.2970125
-    },
-    {
-      "id": 2389104,
-      "ad": "SALİHA ÖZKER",
-      "durum": "Güncel",
-      "adres": "BALAÇ, ATAKUM, SAMSUN",
-      "ada": 8494,
-      "parsel": 3,
-      "lat": 41.3186699919422,
-      "lng": 36.2826952070586
-    },
-    {
-      "id": 2432141,
-      "ad": "MUKADDES ÖZEN B BLOK",
-      "durum": "Güncel",
-      "adres": "ATAKUM, ATAKUM, SAMSUN",
-      "ada": 24,
-      "parsel": 49,
-      "lat": 41.34024858242375,
-      "lng": 36.261151969612996
+      "adres": "ALANLI, ATAKUM, SAMSUN",
+      "ada": 6377,
+      "parsel": 17,
+      "lat": 41.3442234006905,
+      "lng": 36.23143233018117
     },
     {
       "id": 2074075,
@@ -142,6 +122,16 @@
       "lng": 36.341249999999995
     },
     {
+      "id": 2432141,
+      "ad": "MUKADDES ÖZEN B BLOK",
+      "durum": "Güncel",
+      "adres": "ATAKUM, ATAKUM, SAMSUN",
+      "ada": 24,
+      "parsel": 49,
+      "lat": 41.34024858242375,
+      "lng": 36.261151969612996
+    },
+    {
       "id": 2377116,
       "ad": "FATMA AYDIN",
       "durum": "Güncel",
@@ -152,14 +142,14 @@
       "lng": 36.3619833121706
     },
     {
-      "id": 2410884,
-      "ad": "MURAT BOZ",
-      "durum": "Fesihli Tespitsiz",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 1697,
-      "parsel": 1,
-      "lat": 41.36493160895929,
-      "lng": 36.22606592648371
+      "id": 2087734,
+      "ad": "REGAİP ALTINAY",
+      "durum": "Güncel",
+      "adres": "BEYPINAR, ATAKUM, SAMSUN",
+      "ada": 12144,
+      "parsel": 6,
+      "lat": 41.309425701947625,
+      "lng": 36.270739581075624
     },
     {
       "id": 1413858,
@@ -172,6 +162,36 @@
       "lng": 36.26756666666667
     },
     {
+      "id": 2410884,
+      "ad": "MURAT BOZ",
+      "durum": "Fesihli Tespitsiz",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 1697,
+      "parsel": 1,
+      "lat": 41.36493160895929,
+      "lng": 36.22606592648371
+    },
+    {
+      "id": 2389104,
+      "ad": "SALİHA ÖZKER",
+      "durum": "Güncel",
+      "adres": "BALAÇ, ATAKUM, SAMSUN",
+      "ada": 8494,
+      "parsel": 3,
+      "lat": 41.3186699919422,
+      "lng": 36.2826952070586
+    },
+    {
+      "id": 2062734,
+      "ad": "SUDEGÜL ÇOLAK B BLOK",
+      "durum": "Güncel",
+      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
+      "ada": 11395,
+      "parsel": 6,
+      "lat": 41.305675,
+      "lng": 36.2970125
+    },
+    {
       "id": 2382387,
       "ad": "SUNA AKKUŞ İSTİNAT",
       "durum": "Güncel",
@@ -180,26 +200,6 @@
       "parsel": 2,
       "lat": 41.3558507972335,
       "lng": 36.22086830613867
-    },
-    {
-      "id": 2432132,
-      "ad": "ŞENDA EMİRZA ",
-      "durum": "Güncel",
-      "adres": "ALANLI, ATAKUM, SAMSUN",
-      "ada": 6377,
-      "parsel": 17,
-      "lat": 41.3442234006905,
-      "lng": 36.23143233018117
-    },
-    {
-      "id": 2290294,
-      "ad": "AYŞEGÜL ÖZAY-1",
-      "durum": "Bitmiş",
-      "adres": "SANAYİ, LADİK, SAMSUN",
-      "ada": 652,
-      "parsel": 1,
-      "lat": 40.9162665502745,
-      "lng": 35.89664072987863
     },
     {
       "id": 1711920,
@@ -222,14 +222,14 @@
       "lng": 36.12477824647894
     },
     {
-      "id": 1982657,
-      "ad": "HÜSEYİN SAĞLAMÖZ",
+      "id": 2290294,
+      "ad": "AYŞEGÜL ÖZAY-1",
       "durum": "Bitmiş",
-      "adres": "FENK, TERME, SAMSUN",
-      "ada": 341,
-      "parsel": 16,
-      "lat": 41.207775,
-      "lng": 36.963875
+      "adres": "SANAYİ, LADİK, SAMSUN",
+      "ada": 652,
+      "parsel": 1,
+      "lat": 40.9162665502745,
+      "lng": 35.89664072987863
     },
     {
       "id": 2038628,
@@ -242,6 +242,16 @@
       "lng": 35.813898789247126
     },
     {
+      "id": 1982657,
+      "ad": "HÜSEYİN SAĞLAMÖZ",
+      "durum": "Bitmiş",
+      "adres": "FENK, TERME, SAMSUN",
+      "ada": 341,
+      "parsel": 16,
+      "lat": 41.207775,
+      "lng": 36.963875
+    },
+    {
       "id": 2233208,
       "ad": "RECEP AÇIKGÖZ İSTİNAT\n",
       "durum": "Güncel",
@@ -252,16 +262,6 @@
       "lng": 36.26982394428781
     },
     {
-      "id": 2223388,
-      "ad": "HALİME ÇAMLIBEL İSTİNAT",
-      "durum": "Güncel",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5288,
-      "parsel": 9,
-      "lat": 41.35583608270615,
-      "lng": 36.212269487015575
-    },
-    {
       "id": 1795998,
       "ad": "MEHMET KOÇ ve Hissedarları",
       "durum": "Bitmiş",
@@ -270,6 +270,16 @@
       "parsel": 18,
       "lat": 40.913333333333334,
       "lng": 35.89856666666667
+    },
+    {
+      "id": 2223388,
+      "ad": "HALİME ÇAMLIBEL İSTİNAT",
+      "durum": "Güncel",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5288,
+      "parsel": 9,
+      "lat": 41.35583608270615,
+      "lng": 36.212269487015575
     },
     {
       "id": 2199917,
@@ -292,34 +302,14 @@
       "lng": 36.24916666666667
     },
     {
-      "id": 2159137,
-      "ad": "RECEP AÇIKGÖZ",
-      "durum": "Güncel",
-      "adres": "BALAÇ, ATAKUM, SAMSUN",
-      "ada": 9400,
-      "parsel": 16,
-      "lat": 41.32027144702817,
-      "lng": 36.26982394428781
-    },
-    {
-      "id": 2099401,
-      "ad": "YUSUF DEMİR B BLOK",
+      "id": 2108785,
+      "ad": "ŞEFİK ÖMÜR A BLOK",
       "durum": "Güncel",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5115,
-      "parsel": 14,
-      "lat": 41.358383333333336,
-      "lng": 36.22468333333334
-    },
-    {
-      "id": 2100093,
-      "ad": "ÜMİT DEMİROĞLU - İSTİNAT",
-      "durum": "Fesihli Tespitli",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5316,
-      "parsel": 9,
-      "lat": 41.357711111111115,
-      "lng": 36.21931111111111
+      "ada": 5131,
+      "parsel": 18,
+      "lat": 41.3587,
+      "lng": 36.222618181818184
     },
     {
       "id": 2103574,
@@ -332,24 +322,14 @@
       "lng": 36.41282727272727
     },
     {
-      "id": 2102415,
-      "ad": "ÖZKAN ŞENER (A BLOK)",
-      "durum": "Fesihli Tespitli",
-      "adres": "TEPECİK, İLKADIM, SAMSUN",
-      "ada": 6352,
-      "parsel": 12,
-      "lat": 41.265776427924216,
-      "lng": 36.308332625582715
-    },
-    {
-      "id": 2062724,
-      "ad": "SUDEGÜL ÇOLAK A BLOK",
+      "id": 2099401,
+      "ad": "YUSUF DEMİR B BLOK",
       "durum": "Güncel",
-      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
-      "ada": 11395,
-      "parsel": 6,
-      "lat": 41.305675,
-      "lng": 36.2970125
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5115,
+      "parsel": 14,
+      "lat": 41.358383333333336,
+      "lng": 36.22468333333334
     },
     {
       "id": 1809004,
@@ -362,14 +342,14 @@
       "lng": 36.24633333333333
     },
     {
-      "id": 2058126,
-      "ad": "HİKMET KABAOĞLU - İSTİNAT",
+      "id": 2159137,
+      "ad": "RECEP AÇIKGÖZ",
       "durum": "Güncel",
-      "adres": "ALANLI, ATAKUM, SAMSUN",
-      "ada": 6376,
-      "parsel": 11,
-      "lat": 41.344883333333335,
-      "lng": 36.23073333333334
+      "adres": "BALAÇ, ATAKUM, SAMSUN",
+      "ada": 9400,
+      "parsel": 16,
+      "lat": 41.32027144702817,
+      "lng": 36.26982394428781
     },
     {
       "id": 2102422,
@@ -382,14 +362,24 @@
       "lng": 36.308332625582715
     },
     {
-      "id": 2065166,
-      "ad": "MAHİR KAYAOĞLU B BLOK",
-      "durum": "Güncel",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5158,
-      "parsel": 7,
-      "lat": 41.36238333333333,
-      "lng": 36.21761111111111
+      "id": 1735902,
+      "ad": "İSMAİL TÜREDİ B BLOK",
+      "durum": "Bitmiş",
+      "adres": "ÇATALARMUT, İLKADIM, SAMSUN",
+      "ada": 4974,
+      "parsel": 16,
+      "lat": 41.28593571428571,
+      "lng": 36.306785714285716
+    },
+    {
+      "id": 2102415,
+      "ad": "ÖZKAN ŞENER (A BLOK)",
+      "durum": "Fesihli Tespitli",
+      "adres": "TEPECİK, İLKADIM, SAMSUN",
+      "ada": 6352,
+      "parsel": 12,
+      "lat": 41.265776427924216,
+      "lng": 36.308332625582715
     },
     {
       "id": 2099714,
@@ -402,26 +392,6 @@
       "lng": 36.3215
     },
     {
-      "id": 2003770,
-      "ad": "MÜCAHİT YAMAN",
-      "durum": "Bitmiş",
-      "adres": "HASKÖY, CANİK, SAMSUN",
-      "ada": 270,
-      "parsel": 5,
-      "lat": 41.26187142857143,
-      "lng": 36.36547142857143
-    },
-    {
-      "id": 2086856,
-      "ad": "RÜMEYSA BAHADUR(ŞERİF TÜRKER)",
-      "durum": "Bitmiş",
-      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
-      "ada": 806,
-      "parsel": 14,
-      "lat": 41.22075,
-      "lng": 36.4628
-    },
-    {
       "id": 2101807,
       "ad": "HÜSEYİN TÜTÜNCÜ",
       "durum": "Bitmiş",
@@ -430,16 +400,6 @@
       "parsel": 5,
       "lat": 41.26772857142857,
       "lng": 36.28621428571429
-    },
-    {
-      "id": 2068801,
-      "ad": "MÜMİN TUNÇ",
-      "durum": "Bitmiş",
-      "adres": "BAKIRPINAR, BAFRA, SAMSUN",
-      "ada": 244,
-      "parsel": 6,
-      "lat": 41.55693333333333,
-      "lng": 35.922333333333334
     },
     {
       "id": 2036558,
@@ -452,78 +412,8 @@
       "lng": 36.197320000000005
     },
     {
-      "id": 2041688,
-      "ad": "MEHMET ÖZDAMAR",
-      "durum": "Bitmiş",
-      "adres": "KALKANCI, İLKADIM, SAMSUN",
-      "ada": 4545,
-      "parsel": 11,
-      "lat": 41.317275,
-      "lng": 36.318375
-    },
-    {
-      "id": 2044912,
-      "ad": "RAMAZAN TÖRE",
-      "durum": "Bitmiş",
-      "adres": "SARICALI, ÇARŞAMBA, SAMSUN",
-      "ada": 724,
-      "parsel": 12,
-      "lat": 41.197199999999995,
-      "lng": 36.701679999999996
-    },
-    {
-      "id": 2059901,
-      "ad": "OKTAY KURTOĞLU",
-      "durum": "Bitmiş",
-      "adres": "ERENKÖY, 19 MAYIS, SAMSUN",
-      "ada": 736,
-      "parsel": 3,
-      "lat": 41.448660000000004,
-      "lng": 36.13816
-    },
-    {
-      "id": 2050053,
-      "ad": "SEVGİ CAN ARSLAN",
-      "durum": "Bitmiş",
-      "adres": "CİNEKOĞLU, CANİK, SAMSUN",
-      "ada": 2620,
-      "parsel": 6,
-      "lat": 41.27016363636364,
-      "lng": 36.362936363636365
-    },
-    {
-      "id": 1735902,
-      "ad": "İSMAİL TÜREDİ B BLOK",
-      "durum": "Bitmiş",
-      "adres": "ÇATALARMUT, İLKADIM, SAMSUN",
-      "ada": 4974,
-      "parsel": 16,
-      "lat": 41.28593571428571,
-      "lng": 36.306785714285716
-    },
-    {
-      "id": 2061253,
-      "ad": "DURSUN MERMER",
-      "durum": "Bitmiş",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5111,
-      "parsel": 7,
-      "lat": 41.35914285714286,
-      "lng": 36.22042857142857
-    },
-    {
-      "id": 2108785,
-      "ad": "ŞEFİK ÖMÜR A BLOK",
-      "durum": "Güncel",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5131,
-      "parsel": 18,
-      "lat": 41.3587,
-      "lng": 36.222618181818184
-    },
-    {
-      "id": 2047712,
-      "ad": "ÜMİT DEMİROĞLU",
+      "id": 2100093,
+      "ad": "ÜMİT DEMİROĞLU - İSTİNAT",
       "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5316,
@@ -532,14 +422,44 @@
       "lng": 36.21931111111111
     },
     {
-      "id": 2047620,
-      "ad": "YALÇIN BAT",
+      "id": 2086856,
+      "ad": "RÜMEYSA BAHADUR(ŞERİF TÜRKER)",
       "durum": "Bitmiş",
-      "adres": "ALANLI, ATAKUM, SAMSUN",
-      "ada": 12164,
-      "parsel": 9,
-      "lat": 41.3397125,
-      "lng": 36.2269125
+      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
+      "ada": 806,
+      "parsel": 14,
+      "lat": 41.22075,
+      "lng": 36.4628
+    },
+    {
+      "id": 2003770,
+      "ad": "MÜCAHİT YAMAN",
+      "durum": "Bitmiş",
+      "adres": "HASKÖY, CANİK, SAMSUN",
+      "ada": 270,
+      "parsel": 5,
+      "lat": 41.26187142857143,
+      "lng": 36.36547142857143
+    },
+    {
+      "id": 2062724,
+      "ad": "SUDEGÜL ÇOLAK A BLOK",
+      "durum": "Güncel",
+      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
+      "ada": 11395,
+      "parsel": 6,
+      "lat": 41.305675,
+      "lng": 36.2970125
+    },
+    {
+      "id": 2065166,
+      "ad": "MAHİR KAYAOĞLU B BLOK",
+      "durum": "Güncel",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5158,
+      "parsel": 7,
+      "lat": 41.36238333333333,
+      "lng": 36.21761111111111
     },
     {
       "id": 2065168,
@@ -552,6 +472,56 @@
       "lng": 36.21761111111111
     },
     {
+      "id": 2068801,
+      "ad": "MÜMİN TUNÇ",
+      "durum": "Bitmiş",
+      "adres": "BAKIRPINAR, BAFRA, SAMSUN",
+      "ada": 244,
+      "parsel": 6,
+      "lat": 41.55693333333333,
+      "lng": 35.922333333333334
+    },
+    {
+      "id": 2061253,
+      "ad": "DURSUN MERMER",
+      "durum": "Bitmiş",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5111,
+      "parsel": 7,
+      "lat": 41.35914285714286,
+      "lng": 36.22042857142857
+    },
+    {
+      "id": 2050053,
+      "ad": "SEVGİ CAN ARSLAN",
+      "durum": "Bitmiş",
+      "adres": "CİNEKOĞLU, CANİK, SAMSUN",
+      "ada": 2620,
+      "parsel": 6,
+      "lat": 41.27016363636364,
+      "lng": 36.362936363636365
+    },
+    {
+      "id": 2044912,
+      "ad": "RAMAZAN TÖRE",
+      "durum": "Bitmiş",
+      "adres": "SARICALI, ÇARŞAMBA, SAMSUN",
+      "ada": 724,
+      "parsel": 12,
+      "lat": 41.197199999999995,
+      "lng": 36.701679999999996
+    },
+    {
+      "id": 2047712,
+      "ad": "ÜMİT DEMİROĞLU",
+      "durum": "Fesihli Tespitli",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5316,
+      "parsel": 9,
+      "lat": 41.357711111111115,
+      "lng": 36.21931111111111
+    },
+    {
       "id": 2037477,
       "ad": "HİKMET KABAOĞLU",
       "durum": "Güncel",
@@ -562,14 +532,94 @@
       "lng": 36.23073333333334
     },
     {
-      "id": 2030838,
-      "ad": "ÖZDEN KIRIŞ",
+      "id": 2028874,
+      "ad": "SEHER TAŞKIN",
+      "durum": "Bitmiş",
+      "adres": "BALAÇ, ATAKUM, SAMSUN",
+      "ada": 223,
+      "parsel": 1,
+      "lat": 41.323033333333335,
+      "lng": 36.2706
+    },
+    {
+      "id": 2059901,
+      "ad": "OKTAY KURTOĞLU",
+      "durum": "Bitmiş",
+      "adres": "ERENKÖY, 19 MAYIS, SAMSUN",
+      "ada": 736,
+      "parsel": 3,
+      "lat": 41.448660000000004,
+      "lng": 36.13816
+    },
+    {
+      "id": 1822328,
+      "ad": "SABİT TIĞ",
+      "durum": "Bitmiş",
+      "adres": "DEREKÖY/MERKEZ, 19 MAYIS, SAMSUN",
+      "ada": 234,
+      "parsel": 82564149,
+      "lat": 41.46853142857143,
+      "lng": 36.12344
+    },
+    {
+      "id": 2047620,
+      "ad": "YALÇIN BAT",
+      "durum": "Bitmiş",
+      "adres": "ALANLI, ATAKUM, SAMSUN",
+      "ada": 12164,
+      "parsel": 9,
+      "lat": 41.3397125,
+      "lng": 36.2269125
+    },
+    {
+      "id": 2058126,
+      "ad": "HİKMET KABAOĞLU - İSTİNAT",
       "durum": "Güncel",
-      "adres": "YAŞARDOĞU, KAVAK, SAMSUN",
-      "ada": 318,
+      "adres": "ALANLI, ATAKUM, SAMSUN",
+      "ada": 6376,
       "parsel": 11,
-      "lat": 41.0706,
-      "lng": 36.035759999999996
+      "lat": 41.344883333333335,
+      "lng": 36.23073333333334
+    },
+    {
+      "id": 2010373,
+      "ad": "AHMET ORTAHİSAR",
+      "durum": "Bitmiş",
+      "adres": "ERENKÖY, 19 MAYIS, SAMSUN",
+      "ada": 809,
+      "parsel": 1,
+      "lat": 41.439,
+      "lng": 36.1435875
+    },
+    {
+      "id": 2041688,
+      "ad": "MEHMET ÖZDAMAR",
+      "durum": "Bitmiş",
+      "adres": "KALKANCI, İLKADIM, SAMSUN",
+      "ada": 4545,
+      "parsel": 11,
+      "lat": 41.317275,
+      "lng": 36.318375
+    },
+    {
+      "id": 1752378,
+      "ad": "NURGÜL KARACA VE HİSS (NİSAB ONARIM )",
+      "durum": "Bitmiş",
+      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
+      "ada": 209,
+      "parsel": 1,
+      "lat": 41.22104,
+      "lng": 36.446780000000004
+    },
+    {
+      "id": 1743566,
+      "ad": "MURAT DENİZ ",
+      "durum": "Güncel",
+      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
+      "ada": 105,
+      "parsel": 1,
+      "lat": 41.3211,
+      "lng": 36.30258
     },
     {
       "id": 2023067,
@@ -592,86 +642,6 @@
       "lng": 37.142700000000005
     },
     {
-      "id": 1822328,
-      "ad": "SABİT TIĞ",
-      "durum": "Bitmiş",
-      "adres": "DEREKÖY/MERKEZ, 19 MAYIS, SAMSUN",
-      "ada": 234,
-      "parsel": 82564149,
-      "lat": 41.46853142857143,
-      "lng": 36.12344
-    },
-    {
-      "id": 2019044,
-      "ad": "TOLGA TEMERKAN VE MÜŞT.",
-      "durum": "Bitmiş",
-      "adres": "MARDAR, BAFRA, SAMSUN",
-      "ada": 219,
-      "parsel": 1,
-      "lat": 41.569309090909094,
-      "lng": 35.87568181818182
-    },
-    {
-      "id": 2007648,
-      "ad": "VEDAT KEÇELİ",
-      "durum": "Bitmiş",
-      "adres": "EMİREFENDİ, BAFRA, SAMSUN",
-      "ada": 375,
-      "parsel": 20,
-      "lat": 41.560542857142856,
-      "lng": 35.90487142857143
-    },
-    {
-      "id": 2009927,
-      "ad": "ALİ KEMAL BAYRAKTAR",
-      "durum": "Bitmiş",
-      "adres": "ALANLI, ATAKUM, SAMSUN",
-      "ada": 277,
-      "parsel": 10,
-      "lat": 41.35235,
-      "lng": 36.235083333333336
-    },
-    {
-      "id": 1865040,
-      "ad": "AHMET MACİT",
-      "durum": "Bitmiş",
-      "adres": "BAKIRPINAR, BAFRA, SAMSUN",
-      "ada": 321,
-      "parsel": 18,
-      "lat": 41.5668375,
-      "lng": 35.924225
-    },
-    {
-      "id": 2028874,
-      "ad": "SEHER TAŞKIN",
-      "durum": "Bitmiş",
-      "adres": "BALAÇ, ATAKUM, SAMSUN",
-      "ada": 223,
-      "parsel": 1,
-      "lat": 41.323033333333335,
-      "lng": 36.2706
-    },
-    {
-      "id": 1741265,
-      "ad": "ABDULLAH YILMAZ(B BLOK)",
-      "durum": "Bitmiş",
-      "adres": "KUTLUKENT, TEKKEKÖY, SAMSUN",
-      "ada": 358,
-      "parsel": 3,
-      "lat": 41.2291625,
-      "lng": 36.408775
-    },
-    {
-      "id": 2010373,
-      "ad": "AHMET ORTAHİSAR",
-      "durum": "Bitmiş",
-      "adres": "ERENKÖY, 19 MAYIS, SAMSUN",
-      "ada": 809,
-      "parsel": 1,
-      "lat": 41.439,
-      "lng": 36.1435875
-    },
-    {
       "id": 1856728,
       "ad": "PINAR DEMİRCAN\n",
       "durum": "Bitmiş",
@@ -680,46 +650,6 @@
       "parsel": 3,
       "lat": 41.36198,
       "lng": 36.231139999999996
-    },
-    {
-      "id": 1835038,
-      "ad": "AKÇINAR YAPI İNŞAAT TURİZM TİCARET LİMİTED ŞİRKETİ",
-      "durum": "Güncel",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 6737,
-      "parsel": 72714306,
-      "lat": 41.373345,
-      "lng": 36.229661666666665
-    },
-    {
-      "id": 1818375,
-      "ad": "SAMSUN ATAKUM ESNAFVE SANATKARLAR - Şerif Türker\n",
-      "durum": "Fesihli Tespitli",
-      "adres": "HANÇERLİ, İLKADIM, SAMSUN",
-      "ada": 351,
-      "parsel": 1098301,
-      "lat": 41.29770333333333,
-      "lng": 36.32975777777778
-    },
-    {
-      "id": 1805206,
-      "ad": "mahir ÖZGÖNENEL ve hiss.",
-      "durum": "Bitmiş",
-      "adres": "DEĞİRMENÜSTÜ, HAVZA, SAMSUN",
-      "ada": 553,
-      "parsel": 24,
-      "lat": 40.967957142857145,
-      "lng": 35.67285714285715
-    },
-    {
-      "id": 1752378,
-      "ad": "NURGÜL KARACA VE HİSS (NİSAB ONARIM )",
-      "durum": "Bitmiş",
-      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
-      "ada": 209,
-      "parsel": 1,
-      "lat": 41.22104,
-      "lng": 36.446780000000004
     },
     {
       "id": 1823632,
@@ -732,24 +662,14 @@
       "lng": 35.90974
     },
     {
-      "id": 1759223,
-      "ad": "MİYASE KOLTUK - MUHAMMET ÇETİN",
+      "id": 1702582,
+      "ad": "PAK PETROL ÜR.GIDA VE İNŞ. SAN.TİC.LTD.ŞTİ.",
       "durum": "Bitmiş",
-      "adres": "BÜYÜKCAMİ, BAFRA, SAMSUN",
-      "ada": 1751,
-      "parsel": 10,
-      "lat": 41.5705,
-      "lng": 35.89454444444445
-    },
-    {
-      "id": 1727185,
-      "ad": "ERDAL AKÇAY",
-      "durum": "Bitmiş",
-      "adres": "ÇAKIRLAR, ATAKUM, SAMSUN",
-      "ada": 2530,
-      "parsel": 1538225,
-      "lat": 41.400838,
-      "lng": 36.177134
+      "adres": "GAZİOSMANPAŞA, BAFRA, SAMSUN",
+      "ada": 2151,
+      "parsel": 3,
+      "lat": 41.57365,
+      "lng": 35.914833333333334
     },
     {
       "id": 1359727,
@@ -772,54 +692,24 @@
       "lng": 36.22987142857143
     },
     {
-      "id": 1771397,
-      "ad": "KADİR BEYDOĞAN",
+      "id": 2009927,
+      "ad": "ALİ KEMAL BAYRAKTAR",
       "durum": "Bitmiş",
-      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
-      "ada": 8383,
-      "parsel": 9032908,
-      "lat": 41.318264,
-      "lng": 36.301564
+      "adres": "ALANLI, ATAKUM, SAMSUN",
+      "ada": 277,
+      "parsel": 10,
+      "lat": 41.35235,
+      "lng": 36.235083333333336
     },
     {
-      "id": 1646590,
-      "ad": "İSMAİL YILMAZ",
-      "durum": "Güncel",
-      "adres": "İNCESU, ATAKUM, SAMSUN",
-      "ada": 205,
-      "parsel": 9,
-      "lat": 41.378485714285716,
-      "lng": 36.214
-    },
-    {
-      "id": 1743566,
-      "ad": "MURAT DENİZ ",
-      "durum": "Güncel",
-      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
-      "ada": 105,
-      "parsel": 1,
-      "lat": 41.3211,
-      "lng": 36.30258
-    },
-    {
-      "id": 1758907,
-      "ad": "AYŞE DEVECİ",
+      "id": 1727185,
+      "ad": "ERDAL AKÇAY",
       "durum": "Bitmiş",
-      "adres": "ÇATALÇAM, ATAKUM, SAMSUN",
-      "ada": 2777,
-      "parsel": 5,
-      "lat": 41.41208,
-      "lng": 36.173700000000004
-    },
-    {
-      "id": 1702582,
-      "ad": "PAK PETROL ÜR.GIDA VE İNŞ. SAN.TİC.LTD.ŞTİ.",
-      "durum": "Bitmiş",
-      "adres": "GAZİOSMANPAŞA, BAFRA, SAMSUN",
-      "ada": 2151,
-      "parsel": 3,
-      "lat": 41.57365,
-      "lng": 35.914833333333334
+      "adres": "ÇAKIRLAR, ATAKUM, SAMSUN",
+      "ada": 2530,
+      "parsel": 1538225,
+      "lat": 41.400838,
+      "lng": 36.177134
     },
     {
       "id": 1809522,
@@ -832,6 +722,126 @@
       "lng": 36.258179999999996
     },
     {
+      "id": 1865040,
+      "ad": "AHMET MACİT",
+      "durum": "Bitmiş",
+      "adres": "BAKIRPINAR, BAFRA, SAMSUN",
+      "ada": 321,
+      "parsel": 18,
+      "lat": 41.5668375,
+      "lng": 35.924225
+    },
+    {
+      "id": 2030838,
+      "ad": "ÖZDEN KIRIŞ",
+      "durum": "Güncel",
+      "adres": "YAŞARDOĞU, KAVAK, SAMSUN",
+      "ada": 318,
+      "parsel": 11,
+      "lat": 41.0706,
+      "lng": 36.035759999999996
+    },
+    {
+      "id": 1835038,
+      "ad": "AKÇINAR YAPI İNŞAAT TURİZM TİCARET LİMİTED ŞİRKETİ",
+      "durum": "Güncel",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 6737,
+      "parsel": 72714306,
+      "lat": 41.373345,
+      "lng": 36.229661666666665
+    },
+    {
+      "id": 2019044,
+      "ad": "TOLGA TEMERKAN VE MÜŞT.",
+      "durum": "Bitmiş",
+      "adres": "MARDAR, BAFRA, SAMSUN",
+      "ada": 219,
+      "parsel": 1,
+      "lat": 41.569309090909094,
+      "lng": 35.87568181818182
+    },
+    {
+      "id": 1805206,
+      "ad": "mahir ÖZGÖNENEL ve hiss.",
+      "durum": "Bitmiş",
+      "adres": "DEĞİRMENÜSTÜ, HAVZA, SAMSUN",
+      "ada": 553,
+      "parsel": 24,
+      "lat": 40.967957142857145,
+      "lng": 35.67285714285715
+    },
+    {
+      "id": 1771397,
+      "ad": "KADİR BEYDOĞAN",
+      "durum": "Bitmiş",
+      "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
+      "ada": 8383,
+      "parsel": 9032908,
+      "lat": 41.318264,
+      "lng": 36.301564
+    },
+    {
+      "id": 1741265,
+      "ad": "ABDULLAH YILMAZ(B BLOK)",
+      "durum": "Bitmiş",
+      "adres": "KUTLUKENT, TEKKEKÖY, SAMSUN",
+      "ada": 358,
+      "parsel": 3,
+      "lat": 41.2291625,
+      "lng": 36.408775
+    },
+    {
+      "id": 2007648,
+      "ad": "VEDAT KEÇELİ",
+      "durum": "Bitmiş",
+      "adres": "EMİREFENDİ, BAFRA, SAMSUN",
+      "ada": 375,
+      "parsel": 20,
+      "lat": 41.560542857142856,
+      "lng": 35.90487142857143
+    },
+    {
+      "id": 1818375,
+      "ad": "SAMSUN ATAKUM ESNAFVE SANATKARLAR - Şerif Türker\n",
+      "durum": "Fesihli Tespitli",
+      "adres": "HANÇERLİ, İLKADIM, SAMSUN",
+      "ada": 351,
+      "parsel": 1098301,
+      "lat": 41.29770333333333,
+      "lng": 36.32975777777778
+    },
+    {
+      "id": 1758907,
+      "ad": "AYŞE DEVECİ",
+      "durum": "Bitmiş",
+      "adres": "ÇATALÇAM, ATAKUM, SAMSUN",
+      "ada": 2777,
+      "parsel": 5,
+      "lat": 41.41208,
+      "lng": 36.173700000000004
+    },
+    {
+      "id": 1646590,
+      "ad": "İSMAİL YILMAZ",
+      "durum": "Güncel",
+      "adres": "İNCESU, ATAKUM, SAMSUN",
+      "ada": 205,
+      "parsel": 9,
+      "lat": 41.378485714285716,
+      "lng": 36.214
+    },
+    {
+      "id": 1759223,
+      "ad": "MİYASE KOLTUK - MUHAMMET ÇETİN",
+      "durum": "Bitmiş",
+      "adres": "BÜYÜKCAMİ, BAFRA, SAMSUN",
+      "ada": 1751,
+      "parsel": 10,
+      "lat": 41.5705,
+      "lng": 35.89454444444445
+    },
+    {
       "id": 1746873,
       "ad": "YASEMİN BOZKURT",
       "durum": "Bitmiş",
@@ -842,64 +852,24 @@
       "lng": 36.21754
     },
     {
-      "id": 1736501,
-      "ad": "EŞREF ÇEVİK ve Hissedarları",
+      "id": 1711964,
+      "ad": "Niyazi ÇALIŞKAN",
       "durum": "Bitmiş",
-      "adres": "KALKANCI, İLKADIM, SAMSUN",
-      "ada": 10877,
-      "parsel": 2,
-      "lat": 41.321625,
-      "lng": 36.31478333333333
+      "adres": "AKPINAR, LADİK, SAMSUN",
+      "ada": 413,
+      "parsel": 78717826,
+      "lat": 40.91493625,
+      "lng": 35.89223
     },
     {
-      "id": 1744054,
-      "ad": "METİN BAKAN ve Hissedarları",
-      "durum": "Bitmiş",
-      "adres": "ATAKUM, ATAKUM, SAMSUN",
-      "ada": 10987,
-      "parsel": 1,
-      "lat": 41.32872,
-      "lng": 36.293600000000005
-    },
-    {
-      "id": 1711815,
-      "ad": "FATİH CAN ASLANBAYRAK",
-      "durum": "Bitmiş",
-      "adres": "ÇAY, ÇARŞAMBA, SAMSUN",
-      "ada": 902,
-      "parsel": 2,
-      "lat": 41.1863,
-      "lng": 36.72226
-    },
-    {
-      "id": 1408525,
-      "ad": "YELENA AŞAR (B BLOK)",
+      "id": 1449025,
+      "ad": "ÖMER CİNGÖZ",
       "durum": "Bitmiş",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5116,
-      "parsel": 7,
-      "lat": 41.35824615384615,
-      "lng": 36.22541538461538
-    },
-    {
-      "id": 1591519,
-      "ad": "MUHARREM ERGÜN DERECİK",
-      "durum": "Bitmiş",
-      "adres": "DERECİK, İLKADIM, SAMSUN",
-      "ada": 6989,
-      "parsel": 8,
-      "lat": 41.30083333333334,
-      "lng": 36.28065
-    },
-    {
-      "id": 1734190,
-      "ad": "SEVİM ÇİLİNGİR(KADİR ŞİMŞEK)",
-      "durum": "Bitmiş",
-      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
-      "ada": 1009,
-      "parsel": 22,
-      "lat": 41.2156,
-      "lng": 36.46041666666667
+      "ada": 1732,
+      "parsel": 6,
+      "lat": 41.3596625,
+      "lng": 36.2233375
     },
     {
       "id": 1680349,
@@ -922,34 +892,44 @@
       "lng": 35.90338073606
     },
     {
-      "id": 1449025,
-      "ad": "ÖMER CİNGÖZ",
+      "id": 1744054,
+      "ad": "METİN BAKAN ve Hissedarları",
       "durum": "Bitmiş",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 1732,
-      "parsel": 6,
-      "lat": 41.3596625,
-      "lng": 36.2233375
+      "adres": "ATAKUM, ATAKUM, SAMSUN",
+      "ada": 10987,
+      "parsel": 1,
+      "lat": 41.32872,
+      "lng": 36.293600000000005
     },
     {
-      "id": 1408463,
-      "ad": "YELENA AŞAR (A BLOK)",
+      "id": 1711815,
+      "ad": "FATİH CAN ASLANBAYRAK",
       "durum": "Bitmiş",
-      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 5116,
-      "parsel": 7,
-      "lat": 41.35824615384615,
-      "lng": 36.22541538461538
+      "adres": "ÇAY, ÇARŞAMBA, SAMSUN",
+      "ada": 902,
+      "parsel": 2,
+      "lat": 41.1863,
+      "lng": 36.72226
     },
     {
-      "id": 1711964,
-      "ad": "Niyazi ÇALIŞKAN",
+      "id": 1736501,
+      "ad": "EŞREF ÇEVİK ve Hissedarları",
       "durum": "Bitmiş",
-      "adres": "AKPINAR, LADİK, SAMSUN",
-      "ada": 413,
-      "parsel": 78717826,
-      "lat": 40.91493625,
-      "lng": 35.89223
+      "adres": "KALKANCI, İLKADIM, SAMSUN",
+      "ada": 10877,
+      "parsel": 2,
+      "lat": 41.321625,
+      "lng": 36.31478333333333
+    },
+    {
+      "id": 1734190,
+      "ad": "SEVİM ÇİLİNGİR(KADİR ŞİMŞEK)",
+      "durum": "Bitmiş",
+      "adres": "TEKKEKÖY, TEKKEKÖY, SAMSUN",
+      "ada": 1009,
+      "parsel": 22,
+      "lat": 41.2156,
+      "lng": 36.46041666666667
     },
     {
       "id": 1683408,
@@ -962,6 +942,16 @@
       "lng": 36.2928
     },
     {
+      "id": 1591519,
+      "ad": "MUHARREM ERGÜN DERECİK",
+      "durum": "Bitmiş",
+      "adres": "DERECİK, İLKADIM, SAMSUN",
+      "ada": 6989,
+      "parsel": 8,
+      "lat": 41.30083333333334,
+      "lng": 36.28065
+    },
+    {
       "id": 1452665,
       "ad": "SENİHA ALTUN VE HİSS. ",
       "durum": "Bitmiş",
@@ -972,24 +962,14 @@
       "lng": 36.22678571428571
     },
     {
-      "id": 1394621,
-      "ad": "CELAL ŞENOL",
-      "durum": "Fesihli Tespitli",
-      "adres": "TEPECİK, İLKADIM, SAMSUN",
-      "ada": 3167,
-      "parsel": 12,
-      "lat": 41.2649875,
-      "lng": 36.3149375
-    },
-    {
-      "id": 1446671,
-      "ad": "KAMİL ALTUN",
+      "id": 1408463,
+      "ad": "YELENA AŞAR (A BLOK)",
       "durum": "Bitmiş",
-      "adres": "BALAÇ, ATAKUM, SAMSUN",
-      "ada": 227,
-      "parsel": 23,
-      "lat": 41.32134285714285,
-      "lng": 36.269214285714284
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5116,
+      "parsel": 7,
+      "lat": 41.35824615384615,
+      "lng": 36.22541538461538
     },
     {
       "id": 1556027,
@@ -1002,6 +982,36 @@
       "lng": 36.27992857142857
     },
     {
+      "id": 1446671,
+      "ad": "KAMİL ALTUN",
+      "durum": "Bitmiş",
+      "adres": "BALAÇ, ATAKUM, SAMSUN",
+      "ada": 227,
+      "parsel": 23,
+      "lat": 41.32134285714285,
+      "lng": 36.269214285714284
+    },
+    {
+      "id": 1394621,
+      "ad": "CELAL ŞENOL",
+      "durum": "Fesihli Tespitli",
+      "adres": "TEPECİK, İLKADIM, SAMSUN",
+      "ada": 3167,
+      "parsel": 12,
+      "lat": 41.2649875,
+      "lng": 36.3149375
+    },
+    {
+      "id": 1408525,
+      "ad": "YELENA AŞAR (B BLOK)",
+      "durum": "Bitmiş",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": 5116,
+      "parsel": 7,
+      "lat": 41.35824615384615,
+      "lng": 36.22541538461538
+    },
+    {
       "id": 1356646,
       "ad": "SULTAN AZİZ SALMAN",
       "durum": "Fesihli Tespitli",
@@ -1010,16 +1020,6 @@
       "parsel": 7,
       "lat": 41.3103875,
       "lng": 36.27855
-    },
-    {
-      "id": 1579767,
-      "ad": "VATAN KODALAK-18 PARSEL",
-      "durum": "Bitmiş",
-      "adres": "ÇATALARMUT, İLKADIM, SAMSUN",
-      "ada": 4618,
-      "parsel": 18,
-      "lat": 41.28713333333334,
-      "lng": 36.3096
     },
     {
       "id": 1644151,
@@ -1040,6 +1040,16 @@
       "parsel": 7,
       "lat": 41.32819090909091,
       "lng": 36.260600000000004
+    },
+    {
+      "id": 1579767,
+      "ad": "VATAN KODALAK-18 PARSEL",
+      "durum": "Bitmiş",
+      "adres": "ÇATALARMUT, İLKADIM, SAMSUN",
+      "ada": 4618,
+      "parsel": 18,
+      "lat": 41.28713333333334,
+      "lng": 36.3096
     },
     {
       "id": 1780267,
