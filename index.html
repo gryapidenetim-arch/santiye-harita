@@ -97,9 +97,15 @@
       popupAnchor: [1, -34], shadowSize: [41, 41]
     });
   }
+  function firmaIkonuBul(firma) {
+    const f = (firma || '').toUpperCase();
+    if (f.includes('ARSAL')) return FIRMA_IKONLARI.arsal;
+    if (f.includes('GR')) return FIRMA_IKONLARI.gr;
+    return VARSAYILAN_IKON;
+  }
   const FIRMA_IKONLARI = {
-    "GR Yapı Denetim": ikonUret('blue'),
-    "ARSAL Yapı Denetim": ikonUret('yellow'),
+    gr: ikonUret('blue'),
+    arsal: ikonUret('yellow'),
   };
   const VARSAYILAN_IKON = ikonUret('grey');
 
@@ -183,7 +189,7 @@
       const sinirlar = [];
 
       TUM_SANTIYELER.forEach(s => {
-        const ikon = FIRMA_IKONLARI[s.firma] || VARSAYILAN_IKON;
+        const ikon = firmaIkonuBul(s.firma);
         const marker = L.marker([s.lat, s.lng], { icon: ikon }).addTo(harita);
         marker.bindPopup(popupIcerigi(s));
         markerHaritasi[s.id] = marker;
