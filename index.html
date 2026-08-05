@@ -124,6 +124,7 @@
         <span class="adres">${s.adres || ''}</span>
         ${adaParsel ? `<br><span class="adres">${adaParsel}</span>` : ''}
         ${s.durum ? `<br><span class="adres">Durum: ${s.durum}</span>` : ''}
+        ${s.onaysiz ? `<br><span class="adres" style="color:#b45309;">⚠ Belediye onayı bekliyor (TKGM konumu)</span>` : ''}
         <br><a class="yol-tarifi-btn" href="${yolTarifiLinki(s.lat, s.lng)}" target="_blank" rel="noopener">📍 Yol Tarifi Al</a>
       </div>`;
   }
