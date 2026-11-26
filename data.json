@@ -1,5 +1,5 @@
 {
-  "guncelleme_tarihi": "22.09.2026 09:28",
+  "guncelleme_tarihi": "26.11.2026 16:33",
   "santiyeler": [
     {
       "id": 2570369,
@@ -4939,6 +4939,18 @@
       "lat": 41.29262139650817,
       "lng": 36.282620664595335,
       "firma": "ARSAL Yapı Denetim"
+    },
+    {
+      "ad": "ŞENDOĞAN AR İSTİNAT",
+      "durum": "Güncel",
+      "adres": "ÇOBANÖZÜ, ATAKUM, SAMSUN",
+      "ada": "11901",
+      "parsel": "3",
+      "id": 2643713,
+      "firma": "ARSAL Yapı Denetim",
+      "lat": 41.311213196161,
+      "lng": 36.25979644211325,
+      "onaysiz": true
     }
   ]
 }
