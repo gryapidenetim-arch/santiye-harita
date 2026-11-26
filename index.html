@@ -17,6 +17,10 @@
   #ustBarUst { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
   #ustBar b { font-size: 15px; }
   #guncellemeZamani { opacity: 0.75; font-size: 12px; }
+  #durumFiltresi {
+    display: flex; align-items: center; gap: 6px; width: fit-content;
+    margin-top: 8px; font-size: 13px; cursor: pointer;
+  }
 
   #aramaKutusu {
     width: 100%; box-sizing: border-box; padding: 10px 12px; border-radius: 8px;
@@ -24,8 +28,8 @@
   }
 
   #sonuclar {
-    position: absolute; top: 92px; left: 0; right: 0; z-index: 999;
-    background: #fff; max-height: 60vh; overflow-y: auto;
+    position: absolute; top: 100%; left: 0; right: 0;
+    background: #fff; color: #111; max-height: 60vh; overflow-y: auto;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2); display: none;
   }
   #sonuclar.acik { display: block; }
@@ -68,8 +72,9 @@
     <span id="guncellemeZamani">Yükleniyor...</span>
   </div>
   <input id="aramaKutusu" type="text" placeholder="İş adı, ada veya parsel ile ara..." autocomplete="off">
+  <label id="durumFiltresi"><input id="yalnizGuncel" type="checkbox" checked> Yalnızca güncel işler</label>
+  <div id="sonuclar"></div>
 </div>
-<div id="sonuclar"></div>
 <div id="yukleniyor">Şantiye verileri yükleniyor...</div>
 <div id="lejant">
   <div><span class="renk-nokta" style="background:#2A81CB"></span> GR Yapı Denetim</div>
@@ -109,8 +114,35 @@
   };
   const VARSAYILAN_IKON = ikonUret('grey');
 
-  let TUM_SANTIYELER = [];
-  const markerHaritasi = {}; // id -> Leaflet marker
+  let tumSantiyeler = [];
+  let gorunenSantiyeler = [];
+  let guncellemeZamani = '';
+  const markerHaritasi = new Map();
+  const raptiyeler = L.layerGroup().addTo(harita);
+  const yalnizGuncel = document.getElementById('yalnizGuncel');
+  const aramaKutusu = document.getElementById('aramaKutusu');
+
+  function haritaFiltresiniUygula() {
+    gorunenSantiyeler = yalnizGuncel.checked
+      ? tumSantiyeler.filter(s => String(s.durum ?? '').trim()
+          .toLocaleLowerCase('tr').normalize('NFD').replace(/\p{M}/gu, '') === 'guncel')
+      : tumSantiyeler;
+
+    raptiyeler.clearLayers();
+    const sinirlar = [];
+    for (const s of gorunenSantiyeler) {
+      markerHaritasi.get(s).addTo(raptiyeler);
+      sinirlar.push([s.lat, s.lng]);
+    }
+    if (sinirlar.length > 0) {
+      harita.fitBounds(sinirlar, { paddingTopLeft: [40, 125], paddingBottomRight: [40, 60], maxZoom: 16 });
+    }
+    const sayi = `${gorunenSantiyeler.length} şantiye`;
+    document.getElementById('guncellemeZamani').textContent = guncellemeZamani
+      ? `Son güncelleme: ${guncellemeZamani} • ${sayi}`
+      : sayi;
+    aramaSonuclariniGoster(aramaKutusu.value);
+  }
 
   function yolTarifiLinki(lat, lng) {
     return `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
@@ -131,7 +163,7 @@
 
   function markerAOdaklan(s) {
     harita.setView([s.lat, s.lng], 16);
-    const marker = markerHaritasi[s.id];
+    const marker = markerHaritasi.get(s);
     if (marker) marker.openPopup();
     document.getElementById('sonuclar').classList.remove('acik');
     document.getElementById('aramaKutusu').blur();
@@ -147,7 +179,7 @@
       return;
     }
 
-    const eslesenler = TUM_SANTIYELER.filter(s => {
+    const eslesenler = gorunenSantiyeler.filter(s => {
       const hedef = [
         s.ad || '', s.adres || '',
         s.ada != null ? String(s.ada) : '',
@@ -170,14 +202,15 @@
     kutu.classList.add('acik');
   }
 
-  document.getElementById('aramaKutusu').addEventListener('input', e => {
+  aramaKutusu.addEventListener('input', e => {
     aramaSonuclariniGoster(e.target.value);
   });
+  yalnizGuncel.addEventListener('change', haritaFiltresiniUygula);
 
   document.getElementById('sonuclar').addEventListener('click', e => {
     const satir = e.target.closest('.sonuc-satir');
     if (!satir) return;
-    const s = TUM_SANTIYELER.find(x => String(x.id) === satir.dataset.id);
+    const s = gorunenSantiyeler.find(x => String(x.id) === satir.dataset.id);
     if (s) markerAOdaklan(s);
   });
 
@@ -186,27 +219,14 @@
     .then(veri => {
       document.getElementById('yukleniyor').style.display = 'none';
 
-      TUM_SANTIYELER = (veri.santiyeler || []).filter(s => typeof s.lat === 'number' && typeof s.lng === 'number');
-      const sinirlar = [];
-
-      TUM_SANTIYELER.forEach(s => {
-        const ikon = firmaIkonuBul(s.firma);
-        const marker = L.marker([s.lat, s.lng], { icon: ikon }).addTo(harita);
+      tumSantiyeler = (veri.santiyeler || []).filter(s => Number.isFinite(s?.lat) && Number.isFinite(s?.lng));
+      guncellemeZamani = veri.guncelleme_tarihi || '';
+      for (const s of tumSantiyeler) {
+        const marker = L.marker([s.lat, s.lng], { icon: firmaIkonuBul(s.firma) });
         marker.bindPopup(popupIcerigi(s));
-        markerHaritasi[s.id] = marker;
-        sinirlar.push([s.lat, s.lng]);
-      });
-
-      if (sinirlar.length > 0) {
-        harita.fitBounds(sinirlar, { padding: [40, 60] });
+        markerHaritasi.set(s, marker);
       }
-
-      const guncellemeEl = document.getElementById('guncellemeZamani');
-      if (veri.guncelleme_tarihi) {
-        guncellemeEl.textContent = 'Son güncelleme: ' + veri.guncelleme_tarihi + ' • ' + TUM_SANTIYELER.length + ' şantiye';
-      } else {
-        guncellemeEl.textContent = TUM_SANTIYELER.length + ' şantiye';
-      }
+      haritaFiltresiniUygula();
     })
     .catch(err => {
       document.getElementById('yukleniyor').textContent = 'Veri yüklenemedi: ' + err;
