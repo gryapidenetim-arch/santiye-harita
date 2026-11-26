@@ -177,14 +177,8 @@
       : tumSantiyeler;
 
     raptiyeler.clearLayers();
-    const sinirlar = [];
     for (const s of gorunenSantiyeler) {
       markerHaritasi.get(s).addTo(raptiyeler);
-      sinirlar.push([s.lat, s.lng]);
-    }
-    if (sinirlar.length > 0) {
-      const ustBosluk = document.getElementById('ustBar').offsetHeight + 32;
-      harita.fitBounds(sinirlar, { paddingTopLeft: [40, ustBosluk], paddingBottomRight: [40, 60], maxZoom: 16 });
     }
     document.getElementById('santiyeSayisi').textContent = `${gorunenSantiyeler.length} şantiye`;
     document.getElementById('guncellemeZamani').textContent = guncellemeZamani
@@ -276,6 +270,11 @@
         markerHaritasi.set(s, marker);
       }
       haritaFiltresiniUygula();
+      if (gorunenSantiyeler.length > 0) {
+        const sinirlar = gorunenSantiyeler.map(s => [s.lat, s.lng]);
+        const ustBosluk = document.getElementById('ustBar').offsetHeight + 32;
+        harita.fitBounds(sinirlar, { paddingTopLeft: [40, ustBosluk], paddingBottomRight: [40, 60], maxZoom: 16 });
+      }
     })
     .catch(err => {
       document.getElementById('yukleniyor').textContent = 'Veri yüklenemedi: ' + err;
