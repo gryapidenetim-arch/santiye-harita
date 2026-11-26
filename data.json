@@ -1,5 +1,5 @@
 {
-  "guncelleme_tarihi": "26.11.2026 16:33",
+  "guncelleme_tarihi": "26.11.2026 16:34",
   "santiyeler": [
     {
       "id": 2570369,
@@ -37,7 +37,7 @@
     {
       "id": 2540620,
       "ad": "RECEP ALTUNTAŞ",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "KUTLUKENT, TEKKEKÖY, SAMSUN",
       "ada": 289,
       "parsel": 2,
@@ -114,7 +114,7 @@
     {
       "id": 2575183,
       "ad": "Gıpta Ambalaj B blok",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Güncel",
       "adres": "ÇAY, TERME, SAMSUN",
       "ada": 433,
       "parsel": 11,
@@ -180,7 +180,7 @@
     {
       "id": 2101262,
       "ad": "ÖZCAN ÜRER",
-      "durum": "Devir Onayı Bekleyen (Fesihli)",
+      "durum": "Fesihli Tespitli",
       "adres": "BALAÇ, ATAKUM, SAMSUN",
       "ada": 8514,
       "parsel": 12,
@@ -213,7 +213,7 @@
     {
       "id": 2575179,
       "ad": "Gıpta Ambalaj A Blok",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "ÇAY, TERME, SAMSUN",
       "ada": 433,
       "parsel": 11,
@@ -224,7 +224,7 @@
     {
       "id": 2563084,
       "ad": "CELAL ETİK",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 1631,
       "parsel": 2,
@@ -301,7 +301,7 @@
     {
       "id": 1751434,
       "ad": "Vizyon Altyapı İnşaat",
-      "durum": "Devir Başvurusu Bekleyen (Fesihli)",
+      "durum": "Devir Onayı Bekleyen (Fesihli)",
       "adres": "KALKANCI, İLKADIM, SAMSUN",
       "ada": 4546,
       "parsel": 3,
@@ -356,7 +356,7 @@
     {
       "id": 2485603,
       "ad": "SELİM GENÇ",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "İNCESU, ATAKUM, SAMSUN",
       "ada": 278,
       "parsel": 14,
@@ -631,7 +631,7 @@
     {
       "id": 2465051,
       "ad": "MAHMUT EKREM GENÇ",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "KILIÇDEDE, İLKADIM, SAMSUN",
       "ada": 7880,
       "parsel": 9,
@@ -730,7 +730,7 @@
     {
       "id": 2062734,
       "ad": "SUDEGÜL ÇOLAK B BLOK",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
       "ada": 11395,
       "parsel": 6,
@@ -1049,7 +1049,7 @@
     {
       "id": 2294389,
       "ad": "ALİ ALPER İSTİNAT",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "HASKÖY, CANİK, SAMSUN",
       "ada": 4829,
       "parsel": 18,
@@ -1324,7 +1324,7 @@
     {
       "id": 2272435,
       "ad": "ALİ ALPER",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "HASKÖY, CANİK, SAMSUN",
       "ada": 4829,
       "parsel": 18,
@@ -1434,7 +1434,7 @@
     {
       "id": 2253192,
       "ad": "MUSTAFA ORTAHİSAR",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "DEREKÖY/TAŞKELİK, 19 MAYIS, SAMSUN",
       "ada": 829,
       "parsel": 1,
@@ -1500,7 +1500,7 @@
     {
       "id": 2226410,
       "ad": "DERYA BERBER ÜNSAL",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "İSHAKLI, BAFRA, SAMSUN",
       "ada": 896,
       "parsel": 5,
@@ -1995,7 +1995,7 @@
     {
       "id": 2152623,
       "ad": "SELÇUK ÇAKAR",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "ÇAKIRLAR, ATAKUM, SAMSUN",
       "ada": 350,
       "parsel": 5,
@@ -2116,7 +2116,7 @@
     {
       "id": 2099401,
       "ad": "YUSUF DEMİR B BLOK",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5115,
       "parsel": 14,
@@ -2149,7 +2149,7 @@
     {
       "id": 2106803,
       "ad": "HALİME ÇAMLIBEL",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5288,
       "parsel": 9,
@@ -2160,7 +2160,7 @@
     {
       "id": 2107375,
       "ad": "YUSUF DEMİR A BLOK",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5115,
       "parsel": 14,
@@ -2369,7 +2369,7 @@
     {
       "id": 2062724,
       "ad": "SUDEGÜL ÇOLAK A BLOK",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
       "ada": 11395,
       "parsel": 6,
@@ -2393,10 +2393,10 @@
       "ad": "AKÇINAR YAPI İNŞAAT TURİZM TİCARET LİMİTED ŞİRKETİ",
       "durum": "Güncel",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
-      "ada": 6737,
-      "parsel": 72714306,
-      "lat": 41.373345,
-      "lng": 36.229661666666665,
+      "ada": "6737",
+      "parsel": "7",
+      "lat": 41.37334,
+      "lng": 36.229694,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -2525,10 +2525,10 @@
       "ad": "SAMSUN ATAKUM ESNAFVE SANATKARLAR - Şerif Türker\n",
       "durum": "Fesihli Tespitli",
       "adres": "HANÇERLİ, İLKADIM, SAMSUN",
-      "ada": 351,
-      "parsel": 1098301,
-      "lat": 41.29770333333333,
-      "lng": 36.32975777777778,
+      "ada": "351",
+      "parsel": "21",
+      "lat": 41.29769375,
+      "lng": 36.3297575,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -2591,10 +2591,10 @@
       "ad": "SABİT TIĞ",
       "durum": "Bitmiş",
       "adres": "DEREKÖY/MERKEZ, 19 MAYIS, SAMSUN",
-      "ada": 234,
-      "parsel": 82564149,
-      "lat": 41.46853142857143,
-      "lng": 36.12344,
+      "ada": "234",
+      "parsel": "19",
+      "lat": 41.468560000000004,
+      "lng": 36.123448333333336,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -2666,7 +2666,7 @@
     {
       "id": 1700835,
       "ad": "MEHMET TURAN ve Hissedarları",
-      "durum": "Fesihli Tespitli",
+      "durum": "Güncel",
       "adres": "BİÇİNCİK, ASARCIK, SAMSUN",
       "ada": 313,
       "parsel": 3,
@@ -2721,7 +2721,7 @@
     {
       "id": 1743566,
       "ad": "MURAT DENİZ ",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
       "ada": 105,
       "parsel": 1,
@@ -2734,10 +2734,10 @@
       "ad": "KADİR BEYDOĞAN",
       "durum": "Bitmiş",
       "adres": "BÜYÜKKOLPINAR, ATAKUM, SAMSUN",
-      "ada": 8383,
-      "parsel": 9032908,
-      "lat": 41.318264,
-      "lng": 36.301564,
+      "ada": "8383",
+      "parsel": "6",
+      "lat": 41.318285,
+      "lng": 36.301522500000004,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -2833,10 +2833,10 @@
       "ad": "ERDAL AKÇAY",
       "durum": "Bitmiş",
       "adres": "ÇAKIRLAR, ATAKUM, SAMSUN",
-      "ada": 2530,
-      "parsel": 1538225,
-      "lat": 41.400838,
-      "lng": 36.177134,
+      "ada": "2530",
+      "parsel": "3",
+      "lat": 41.4008125,
+      "lng": 36.1771325,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -3053,10 +3053,10 @@
       "ad": "Niyazi ÇALIŞKAN",
       "durum": "Bitmiş",
       "adres": "AKPINAR, LADİK, SAMSUN",
-      "ada": 413,
-      "parsel": 78717826,
-      "lat": 40.91493625,
-      "lng": 35.89223,
+      "ada": "413",
+      "parsel": "12",
+      "lat": 40.91493571428571,
+      "lng": 35.89221142857143,
       "firma": "GR Yapı Denetim"
     },
     {
@@ -3601,7 +3601,7 @@
     {
       "id": 2612378,
       "ad": "ŞABAN AY",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "KAMALI, ATAKUM, SAMSUN",
       "ada": 8528,
       "parsel": 30,
@@ -3656,7 +3656,7 @@
     {
       "id": 2560522,
       "ad": "İBRAHİM YASAN",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5347,
       "parsel": 11,
@@ -3667,7 +3667,7 @@
     {
       "id": 2606510,
       "ad": "ŞABAN AY",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "KAMALI, ATAKUM, SAMSUN",
       "ada": 8528,
       "parsel": 30,
@@ -3711,7 +3711,7 @@
     {
       "id": 2592285,
       "ad": "İBRAHİM ÇOLAK",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "ÇATALÇAM, ATAKUM, SAMSUN",
       "ada": 2159,
       "parsel": 15,
@@ -3733,7 +3733,7 @@
     {
       "id": 2533721,
       "ad": "SELAMET ÇAKMAK İSTİNAT\n",
-      "durum": "Fesihli Tespitli",
+      "durum": "Güncel",
       "adres": "BALAÇ, ATAKUM, SAMSUN",
       "ada": 9380,
       "parsel": 3,
@@ -3744,7 +3744,7 @@
     {
       "id": 2537960,
       "ad": "YÜKSEL UZUN",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "KALKANCI, İLKADIM, SAMSUN",
       "ada": 2334,
       "parsel": 12,
@@ -3799,7 +3799,7 @@
     {
       "id": 2501637,
       "ad": "HURİYE KURUM",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "HASKÖY, CANİK, SAMSUN",
       "ada": 275,
       "parsel": 19,
@@ -3843,7 +3843,7 @@
     {
       "id": 2515077,
       "ad": "MUSTAFA BOZ İSTİNAT",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "BALAÇ, ATAKUM, SAMSUN",
       "ada": 9438,
       "parsel": 10,
@@ -3876,7 +3876,7 @@
     {
       "id": 2508062,
       "ad": "GÜLÜZAR YILMAZ İSTİNAT",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "DERECİK, İLKADIM, SAMSUN",
       "ada": 6953,
       "parsel": 13,
@@ -3898,7 +3898,7 @@
     {
       "id": 2555868,
       "ad": "ŞENDOĞAN AR \n",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Güncel",
       "adres": "ÇOBANÖZÜ, ATAKUM, SAMSUN",
       "ada": 11901,
       "parsel": 3,
@@ -4085,7 +4085,7 @@
     {
       "id": 2485154,
       "ad": "ZEHRA ŞENTUNA VE MÜŞT.",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "BAKIRPINAR, BAFRA, SAMSUN",
       "ada": 213,
       "parsel": 10,
@@ -4184,7 +4184,7 @@
     {
       "id": 2454499,
       "ad": "HASAN ÖZTÜRK",
-      "durum": "Ruhsat Bekleyen",
+      "durum": "Güncel",
       "adres": "GAZİ, ÇARŞAMBA, SAMSUN",
       "ada": 386,
       "parsel": 1,
@@ -4250,7 +4250,7 @@
     {
       "id": 2402398,
       "ad": "GÜLÜZAR YILMAZ",
-      "durum": "Güncel",
+      "durum": "Fesihli Tespitli",
       "adres": "DERECİK, İLKADIM, SAMSUN",
       "ada": 6953,
       "parsel": 13,
@@ -4404,7 +4404,7 @@
     {
       "id": 2102400,
       "ad": "SELAMET ÇAKMAK ",
-      "durum": "Fesihli Tespitli",
+      "durum": "Güncel",
       "adres": "BALAÇ, ATAKUM, SAMSUN",
       "ada": 9380,
       "parsel": 3,
@@ -4558,7 +4558,7 @@
     {
       "id": 2369698,
       "ad": "EBRU UZUN",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "ÇAY, ÇARŞAMBA, SAMSUN",
       "ada": 565,
       "parsel": 3,
@@ -4767,7 +4767,7 @@
     {
       "id": 2277938,
       "ad": "MİTHAT SONKAYA VE HİSS.",
-      "durum": "Güncel",
+      "durum": "Bitmiş",
       "adres": "MERKEZ, YAKAKENT, SAMSUN",
       "ada": 475,
       "parsel": 6,
@@ -4899,7 +4899,7 @@
     {
       "id": 2626505,
       "ad": "EMRULLAH KAYA",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Ruhsat Bekleyen",
       "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
       "ada": 5403,
       "parsel": 7,
@@ -4932,7 +4932,7 @@
     {
       "id": 2613534,
       "ad": "HAVVA GENÇ",
-      "durum": "Ruhsat Başvuru Bekleyen",
+      "durum": "Güncel",
       "adres": "DERECİK, İLKADIM, SAMSUN",
       "ada": 6919,
       "parsel": 15,
