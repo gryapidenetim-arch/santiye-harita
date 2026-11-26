@@ -4951,6 +4951,18 @@
       "lat": 41.311213196161,
       "lng": 36.25979644211325,
       "onaysiz": true
+    },
+    {
+      "ad": "CELAL ETİK İSTİNAT",
+      "durum": "Güncel",
+      "adres": "BÜYÜKOYUMCA, ATAKUM, SAMSUN",
+      "ada": "1631",
+      "parsel": "2",
+      "id": 2647322,
+      "firma": "GR Yapı Denetim",
+      "lat": 41.36211674680543,
+      "lng": 36.226083565007286,
+      "onaysiz": true
     }
   ]
 }
