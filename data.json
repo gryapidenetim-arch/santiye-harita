@@ -1,5 +1,5 @@
 {
-  "guncelleme_tarihi": "26.11.2026 16:34",
+  "guncelleme_tarihi": "27.11.2026 16:29",
   "santiyeler": [
     {
       "id": 2570369,
@@ -4963,6 +4963,39 @@
       "lat": 41.36211674680543,
       "lng": 36.226083565007286,
       "onaysiz": true
+    },
+    {
+      "ad": "ÖZ ARTVİN YAPI KOOPERATİFİ A BLOK ",
+      "durum": "Güncel",
+      "adres": "⏎Mevcut Değil, İLKADIM, SAMSUN",
+      "ada": "3138",
+      "parsel": "11",
+      "id": 1407210,
+      "firma": "GR Yapı Denetim",
+      "lat": 41.262571428571434,
+      "lng": 36.318
+    },
+    {
+      "ad": "ÖZ ARTVİN YAPI KOOPERATİFİ B BLOK",
+      "durum": "Güncel",
+      "adres": "⏎Mevcut Değil, İLKADIM, SAMSUN",
+      "ada": "3138",
+      "parsel": "11",
+      "id": 1409499,
+      "firma": "GR Yapı Denetim",
+      "lat": 41.262571428571434,
+      "lng": 36.318
+    },
+    {
+      "ad": "ÖZ ARTVİN YAPI KOOPERATİFİ C BLOK",
+      "durum": "Güncel",
+      "adres": "⏎Mevcut Değil, İLKADIM, SAMSUN",
+      "ada": "3139",
+      "parsel": "7",
+      "id": 1407209,
+      "firma": "GR Yapı Denetim",
+      "lat": 41.26295833333334,
+      "lng": 36.31913333333333
     }
   ]
 }
