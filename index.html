@@ -233,10 +233,36 @@
       markerAOdaklan(kayit);
       return true;
     }
+    if (!hedef.has('konumSec')) {
+      const bildirim = document.getElementById('konumBildirimi');
+      bildirim.hidden = false;
+      bildirim.textContent = `YİBF ${yibf} için yayımlanmış konum bulunamadı.`;
+    }
+    return false;
+  }
+
+  function raptiyeSeciminiBaslat() {
+    const hedef = new URLSearchParams(window.location.hash.slice(1));
+    if (!/^[a-f0-9]{32}$/.test(hedef.get('konumSec') || '')) return;
     const bildirim = document.getElementById('konumBildirimi');
     bildirim.hidden = false;
-    bildirim.textContent = `YİBF ${yibf} için yayımlanmış konum bulunamadı.`;
-    return false;
+    bildirim.textContent = 'Raptiyenin yerini seçmek için haritaya tıkla.';
+    harita.getContainer().style.cursor = 'crosshair';
+    let secilen;
+    function noktayiGoster(enlem, boylam) {
+      if (secilen) secilen.setLatLng([enlem, boylam]);
+      else secilen = L.circleMarker([enlem, boylam], {
+        radius: 9, color: '#fff', weight: 3, fillColor: '#c2410c', fillOpacity: 1, interactive: false,
+      }).addTo(harita);
+      bildirim.textContent = 'Nokta seçildi. YDS Merkez’de Noktayı taslağa ekle düğmesine bas.';
+    }
+    harita.on('click', olay => {
+      const nokta = olay.latlng.wrap();
+      hedef.set('enlem', nokta.lat.toFixed(7));
+      hedef.set('boylam', nokta.lng.toFixed(7));
+      history.replaceState(null, '', '#' + hedef.toString());
+      noktayiGoster(nokta.lat, nokta.lng);
+    });
   }
 
   function aramaSonuclariniGoster(sorgu) {
@@ -302,6 +328,7 @@
         const ustBosluk = document.getElementById('ustBar').offsetHeight + 32;
         harita.fitBounds(sinirlar, { paddingTopLeft: [40, ustBosluk], paddingBottomRight: [40, 60], maxZoom: 16 });
       }
+      raptiyeSeciminiBaslat();
     })
     .catch(err => {
       document.getElementById('yukleniyor').textContent = 'Veri yüklenemedi: ' + err;
